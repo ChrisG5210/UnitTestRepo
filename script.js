@@ -5,3 +5,9 @@ document.addEventListener('mousemove' , function (event){
         document.body.style.backgroundColor = color;
         console.log(color);
 });
+
+const toggleSwitch = document.querySelector('input[type ="checkbox"]')
+if (localStorage.getItem('darkModeEnabled')){
+    document.body.className = 'dark';
+    toggleSwitch.checked = true;
+};
